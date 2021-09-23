@@ -1,0 +1,28 @@
+on: [push]
+
+jobs:
+  format:
+    name: Format
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.17
+
+    - name: go fmt
+      run: go fmt ./...
+
+    - name: set git user email
+      run: git config --global user.email "merybka@gmail.com"
+
+    - name: set git user name
+      run: git config --global user.name "Michael Rybka"
+
+    - name: stage changes
+      run: git add --all
+
+    - name: commit and push
+      run: git diff --quiet && git commit -m "fmt" && git push ; echo done

@@ -3,7 +3,7 @@ package models
 type Function struct {
 	ID ID
 
-	Name string
+	  Name string
 	Doc string
 	Inputs []Field
 	Outputs []Field

@@ -2,6 +2,6 @@ package models
 
 type Field struct {
 	Name string
-	Type *Type
+	Type *Type  
 	Doc string
 }
