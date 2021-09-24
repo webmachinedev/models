@@ -8,3 +8,6 @@ type Function struct {
 	Inputs  []Field
 	Outputs []Field
 }
+
+func (f *Function) WriteListItem(w http.ResponseWriter) {
+}
