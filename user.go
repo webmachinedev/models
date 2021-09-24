@@ -21,3 +21,6 @@ type User struct {
 	// This should be an instance of github.com/webmachinedev/userfs
 	FSRoot string
 }
+
+func (f *User) WriteListItem(w http.ResponseWriter) {
+}
