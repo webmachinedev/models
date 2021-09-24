@@ -7,3 +7,6 @@ type Type struct {
 	Doc    string
 	Fields []Field
 }
+
+func (f *Function) WriteListItem(w http.ResponseWriter) {
+}
