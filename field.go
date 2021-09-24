@@ -6,5 +6,5 @@ type Field struct {
 	Doc  string
 }
 
-func (f *Function) WriteListItem(w http.ResponseWriter) {
+func (f *Field) WriteListItem(w http.ResponseWriter) {
 }
