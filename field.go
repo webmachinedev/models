@@ -1,5 +1,7 @@
 package models
 
+import "net/http"
+
 type Field struct {
 	Name string
 	Type string

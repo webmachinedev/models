@@ -1,5 +1,7 @@
 package models
 
+import "net/http"
+
 type Type struct {
 	ID ID
 

@@ -1,5 +1,7 @@
 package models
 
+import "net/http"
+
 // User models a user of an application. It may be an individual or a corperation
 // or an automated entity.
 type User struct {
