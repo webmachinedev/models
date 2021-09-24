@@ -4,7 +4,7 @@ import "net/http"
 
 type Field struct {
 	Name string `json:"name"`
-	Type string	`json:"type"`
+	Type string `json:"type"`
 	Doc  string `json:"doc"`
 }
 
