@@ -6,10 +6,10 @@ import "net/http"
 // or an automated entity.
 type User struct {
 	// Globallly unique ID.
-	ID ID
+	ID string `json:"id"`
 
 	// Name is what they want to be called.
-	Name string
+	Name string `json:"name"`
 
 	// PublicKey can be used for encrypting messages for this user.
 	PublicKey string

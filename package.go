@@ -1,6 +1,6 @@
 package models
 
 type Package struct {
-	Types     map[string]Type
-	Functions map[string]Function
+	Types     map[string]Type `json:"types"`
+	Functions map[string]Function `json:"functions"`
 }
