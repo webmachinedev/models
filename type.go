@@ -8,5 +8,5 @@ type Type struct {
 	Fields []Field
 }
 
-func (f *Function) WriteListItem(w http.ResponseWriter) {
+func (t *Type) WriteListItem(w http.ResponseWriter) {
 }
