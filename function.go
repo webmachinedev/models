@@ -8,11 +8,11 @@ import (
 )
 
 type Function struct {
-	Name    string  `json:"name"`
-	Doc     string  `json:"doc"`
-	Inputs  []Field `json:"inputs"`
-	Outputs []Field `json:"outputs"`
-	Body []Statement `json:"body"`
+	Name    string      `json:"name"`
+	Doc     string      `json:"doc"`
+	Inputs  []Field     `json:"inputs"`
+	Outputs []Field     `json:"outputs"`
+	Body    []Statement `json:"body"`
 }
 
 func lowercase(str string) string {
@@ -71,17 +71,17 @@ func (f *Function) ID() string {
 }
 
 type Statement struct {
-	Type string `json:"type"`
-	Args map[string]Statement `json:"args"`
-	Children []Statement `json:"children"`
+	Type     string               `json:"type"`
+	Args     map[string]Statement `json:"args"`
+	Children []Statement          `json:"children"`
 }
 
 func (s *Statement) Exec(ns Namespace) (Result, error)
 
 type Result struct {
 	Loading bool
-	Error error
-	Value interface{}
+	Error   error
+	Value   interface{}
 }
 
 type Namespace map[string][]string

@@ -22,7 +22,7 @@ func init() {
 }
 
 func filterString(str string) string {
-    return allButLettersRegex.ReplaceAllString(str, "")
+	return allButLettersRegex.ReplaceAllString(str, "")
 }
 
 func createIDFromName(name string) string {

@@ -7,5 +7,5 @@ type Field struct {
 }
 
 func (f *Field) ID() string {
-	return createIDFromName(f.Name)+f.Type
+	return createIDFromName(f.Name) + f.Type
 }
